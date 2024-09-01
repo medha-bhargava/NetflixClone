@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Poppins', sans-serif; */
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url(Assets/Images/bg1.jpg);
+    height: 85.5vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+}
+.main .box{
+    height: 85.5vh;
+    width: 100%;
+    opacity: 0.6;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+nav{
+    max-width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+nav img{
+    color: red;
+    width: 160px;
+    position: relative;
+    top: 19px;
+    z-index: 10;
+}
+nav button, nav select{
+    position: relative;
+    z-index: 10;
+}
+.hero{
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 62px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 14px;
+    padding: 0 30px;
+}
+.hero> :nth-child(1){
+    font-weight: bolder;
+    letter-spacing: -2px;
+    font-size: 48px;
+    text-align: center;
+}
+.hero> :nth-child(2){
+    font-weight: 400;
+    letter-spacing: -1px;
+    font-size: 24px;
+    text-align: center;
+}
+.hero> :nth-child(3){
+    font-weight: 400;
+    letter-spacing: -1px;
+    font-size: 20px;
+    text-align: center;
+}
+.separation{
+    height: 7px;
+    background-color: #232323;
+    position: relative;
+    z-index: 20;
+}
+.btn{
+    background-color: rgba(248, 243, 243, 0.021);
+    color: white;
+    border: none;
+    padding: 3px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btnf #lang1{
+    border: 1px solid grey;
+}
+.btn-nav #lang{
+    border: 1px solid grey;
+}
+.btn-red{
+    background-color: red;
+    color: white;
+    padding: 14px 20px;
+    font-size: 20px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-red:hover{
+    transition: 0.3s;
+    background: rgb(193, 17, 25);
+}
+.btn-red-sm{
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+}
+.btn-red-sm:hover{
+    transition: 0.3s;
+    background: rgb(193, 17, 25);
+}
+.main select{
+    padding: 5px 10px;
+    background-color: rgba(248, 243, 243, 0.021);
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+.main input, .last input{
+    background-color: rgba(23, 23, 23, 0.7);
+    color: white;
+    border: 1px solid rgba(246, 238, 238, 0.3);
+    padding: 17px 180px 17px 14px;
+    font-size: 15px;
+    border-radius: 4px;
+}
+.hero-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.icon{
+    position: relative;
+    top: 3px;
+}
+.first, .second, .third, .forth{
+    font-family: 'Martel Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    /* position: relative;
+    top: 100px; */
+}
+.lines1> :nth-child(1){
+    letter-spacing: -2px;
+    font-weight: bolder;
+    font-size: 48px;
+}
+.lines1> :nth-child(2){
+    letter-spacing: 0px;
+    font-size: 24px;
+    line-height: 33px;
+}
+.secImage{
+    position: relative;
+}
+.secImage img{
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+}
+.secImage video{
+    position: absolute;
+    top: 68px;
+    right: 62px;
+    width: 312px;
+}
+.lines2> :nth-child(1){
+    letter-spacing: -2px;
+    line-height: 68px;
+    font-weight: bolder;
+    font-size: 48px;
+}
+.lines2> :nth-child(2){
+    letter-spacing: 0px;
+    font-size: 24px;
+    line-height: 33px;
+}
+.secImage2 img{
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+}
+.lines3> :nth-child(1){
+    letter-spacing: -2px;
+    line-height: 68px;
+    font-weight: bolder;
+    font-size: 48px;
+}
+.lines3> :nth-child(2){
+    letter-spacing: 0px;
+    font-size: 24px;
+    line-height: 33px;
+}
+.secImage3 img{
+    width: 30vw;
+    position: relative;
+    top: 100px;
+    z-index: 10;
+}
+.secImage3 video{
+    position: relative;
+    top: -197px;
+    right: -75px;
+    width: 270px;
+}
+.lines4> :nth-child(1){
+    letter-spacing: -2px;
+    line-height: 68px;
+    font-weight: bolder;
+    font-size: 48px;
+}
+.lines4> :nth-child(2){
+    letter-spacing: 0px;
+    font-size: 24px;
+    line-height: 33px;
+}
+.secImage4 img{
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+}
+.fifth{
+    font-family: 'Martel Sans', sans-serif;
+    margin: auto;
+    color: white;
+}
+h2{
+    letter-spacing: -2px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 48px;
+}
+.boxes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
+    gap: 9px;
+}
+.box1, .box2, .box3, .box4, .box5, .box6{
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+    padding: 24px;
+    font-size: 21px;
+    background-color: #2d2d2d;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover{
+    background-color: rgb(65, 65, 65);
+    transition: all 0.3s ease-out;
+}
+.last{
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.last div{
+    margin-bottom: 8px;
+}
+footer{
+    font-family: 'Martel Sans', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+    color: white;
+    max-width: 60vw;
+    margin: 50px auto;
+}
+@media screen and (max-width: 1300px){
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+    }
+}
+footer .items{
+    display: flex;
+    justify-content: space-between;
+    line-height: 2.5;
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+}
+footer .l1{
+    color: rgba(255,255,255,0.7);
+    line-height: 2.5;
+}
+footer a{
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+}
+.btnf{
+    line-height: 3.5;
+}
+.finalLine{
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+}
